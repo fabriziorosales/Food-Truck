@@ -1,0 +1,408 @@
+/* Tipografia del Logo */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+
+/* Tipografia de texto normal */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+/* Estilos para todos */
+* {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+	-ms-overflow-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url('../img/comida/fondo.jpg');
+	background-repeat: space repeat;
+}
+.shadow {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    background-color: #292829;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	position: sticky;
+	top: 0px;
+	z-index: 3;
+}
+
+nav div ul {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+	/* overflow: hidden; */
+}
+
+nav div ul > * {
+	text-align: center;
+	width: 60px;
+	font-size: 20px;
+	padding: 20px 10px;
+	color: aliceblue;
+}
+
+#logo .fa-bread-slice {
+	width: 10px;
+	font-size: 25px;
+	padding: 0 20px 0 0;
+	color: white;
+	z-index: 99;
+}
+
+#logo-responsive {
+	display: none;
+}
+
+nav div ul > *:hover {
+	background-color: #3e3e3e;
+	transition: all ease-in 200ms;
+}
+
+nav div ul li {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.desp {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: -50px;
+}
+
+.desp li {
+	background-color: #363436;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.desp li a {
+	color: white;
+}
+
+.desp li:nth-child(1):hover {
+	background-color: #c51e1e;
+}
+.desp li:nth-child(2):hover {
+	background-color: #2099cd;
+}
+.desp li:nth-child(3):hover {
+	background-color: #b3b82d;
+}
+
+nav div ul li:hover > ul {
+	display: block;
+	margin-top: 0px;
+	background-color: #292929;
+}
+
+nav h2 {
+    margin: 0;
+    padding: 15px;
+    color: white;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+
+/* BODY */
+
+.menus {
+	text-align: center;
+	background-color: #363436;
+	color: white;
+	margin: 0 10%;
+	padding: 0 2%;
+	padding-bottom: 2%;
+	height: 89vh;
+}
+
+.menus h2 {
+	font-size: 35px;
+	padding: 25px 0;
+	background-color: #363436;
+}
+
+.menus article {
+	background-color: #757375;
+	overflow: hidden;
+}
+
+.menus article:nth-child(2) {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.menus article:last-child {
+	/* background-color: aqua; */
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.menus article:nth-child(2) p:first-child {
+	padding-top: 30px;
+}
+
+.menus article:nth-child(2) p:last-child {
+	padding-bottom: 30px;
+}
+
+.menus article h3 {
+	text-align: center;
+	padding: 10px 5%;
+	background-color: rgb(75 75 75);
+}
+
+.menus article p {
+	text-align: justify;
+	font-size: 19px;
+	padding: 10px 5%;
+}
+
+.menus article div {
+	display: flex;
+	flex-direction: row;
+}
+
+.menus article div > * {
+	width: 33.33%;
+}
+
+.botones-co {
+	padding: 8px 20px;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: rgb(14, 14, 14);
+	color: #fff;
+	border: none;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.botones-co span {
+	position: relative;
+	z-index: 2;
+}
+
+.botones-co.test::after {
+	content: "";
+	width: 110%;
+	position: absolute;
+	z-index: 1;
+	transition: all 220ms ease-in;
+	margin-top: -20px;
+	left: calc(-100% - 80px);
+	border-bottom: 80px solid #2bd405;
+	border-right: 80px solid transparent;
+}
+
+.botones-co.test:hover::after {
+	left: -5px;
+}
+
+.galeria {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.galeria > *:last-child {
+	float: left;
+}
+
+.targeta > div {
+	padding: 10px;
+	background-color: #292829;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	overflow: hidden;
+	height: 200px;
+	
+}
+
+.targeta {
+	width: 20%;
+	padding: 10px 5px;
+}
+
+.tgt-img {
+	width: 100%;
+	height: 80%;
+	overflow: hidden;
+}
+
+.tgt-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.targeta p {
+	padding: 10px 5px 0 0;
+}
+
+/* SLIDER */
+
+.container{
+	height: 500px;
+	margin: 0 10%;
+	overflow: hidden;
+}
+
+.wrapper{
+    width: 100%;
+	height: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+.wrapper img{
+    min-width: 100%;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}	
+
+
+/*ANIMATION*/
+
+@media screen and (max-width: 975px)  {
+
+	/* GALERIA */
+
+	body {
+		background-repeat: repeat;
+		background-size: contain;
+		/* background-color: #2099cd; */
+	}
+	
+	.galeria {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.galeria > * {
+		width: 30%;
+	}
+
+	.menus {
+		height: 100%;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 600px)  {
+	
+	/* LOGOS */
+	body {
+		background-repeat:inherit;
+	}
+
+	#logo {
+		display: none;
+	}
+	#logo-responsive {
+		display: block;
+	}
+
+	/* GALERIA */
+	
+	.galeria {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.galeria > * {
+		width: 48%;
+	}
+	
+}
+
+@media screen and (max-width: 656px)  {
+
+	/* GALERIA */
+	
+	.galeria {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.galeria > * {
+		width: 47%;
+	}
+	
+}
+
+@media screen and (max-width: 440px)  {
+
+	/* GALERIA */
+	
+	.galeria {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.galeria > * {
+		width: 70%;
+	}
+	
+}
