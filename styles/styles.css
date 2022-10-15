@@ -274,7 +274,7 @@ nav h2 {
 /* SLIDER */
 
 .container{
-	height: 500px;
+	height: 550px;
 	margin: 0 10%;
 	overflow: hidden;
 }
@@ -343,6 +343,9 @@ nav h2 {
 	}
 
 	.menus {
+		height: 100%;
+	}
+	.container{
 		height: 100%;
 	}
 	
@@ -414,6 +417,13 @@ nav h2 {
 	
 	.galeria > * {
 		width: 70%;
+	}
+	.menus article div {
+		flex-wrap: wrap;
+	}
+	
+	.menus article div > * {
+		width: 100%;
 	}
 	
 }
