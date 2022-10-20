@@ -29,7 +29,8 @@ nav {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 20%;
+    /* height: 20%; */
+	height: 7vh;
 	display: flex;
 	justify-content: space-between;
 	/* align-items: center; */
@@ -129,57 +130,65 @@ nav h2 {
 	margin: 0 10%;
 	padding: 0 2%;
 	padding-bottom: 2%;
-	height: 89vh;
+	/* height: 89vh; */
 }
 
-.menus h2 {
+.submenu {
+	text-align: center;
+	background-color: #363436;
+	color: white;
+	margin: 0 10%;
+	padding: 0 2%;
+	height: 93vh;
+	/* top: 0; */
+	/* position: absolute; */
+}
+
+.menus h2, .submenu h2 {
 	font-size: 35px;
 	padding: 25px 0;
 	background-color: #363436;
 }
 
-.menus article {
+.menus article, .submenu article {
 	background-color: #757375;
 	overflow: hidden;
 }
 
-.menus article:nth-child(2) {
+.menus article:nth-child(2), .submenu article:nth-child(2) {
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 }
 
-.menus article:last-child {
+.menus article:last-child, .submenu article:last-child {
 	/* background-color: aqua; */
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
 }
 
-.menus article:nth-child(2) p:first-child {
+.menus article:nth-child(2) p:last-child, .submenu article:nth-child(2) p:last-child {
 	padding-top: 30px;
-}
-
-.menus article:nth-child(2) p:last-child {
 	padding-bottom: 30px;
 }
 
-.menus article h3 {
+.menus article h3, .submenu article h3 {
 	text-align: center;
 	padding: 10px 5%;
 	background-color: rgb(75 75 75);
 }
 
-.menus article p {
+.menus article p, .submenu article p {
 	text-align: justify;
 	font-size: 19px;
 	padding: 10px 5%;
 }
 
-.menus article div {
+.menus article div, .submenu article div {
 	display: flex;
 	flex-direction: row;
 }
 
-.menus article div > * {
+.menus article div > *, .submenu article div > * {
 	width: 33.33%;
 }
 
@@ -265,7 +274,7 @@ nav h2 {
 /* SLIDER */
 
 .container{
-	height: 500px;
+	height: 550px;
 	margin: 0 10%;
 	overflow: hidden;
 }
@@ -336,6 +345,9 @@ nav h2 {
 	.menus {
 		height: 100%;
 	}
+	.container{
+		height: 100%;
+	}
 	
 }
 
@@ -368,7 +380,9 @@ nav h2 {
 	.galeria > * {
 		width: 48%;
 	}
-	
+	.submenu {
+		height: 100%;
+	}
 }
 
 @media screen and (max-width: 656px)  {
@@ -403,6 +417,13 @@ nav h2 {
 	
 	.galeria > * {
 		width: 70%;
+	}
+	.menus article div {
+		flex-wrap: wrap;
+	}
+	
+	.menus article div > * {
+		width: 100%;
 	}
 	
 }
