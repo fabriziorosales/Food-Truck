@@ -369,6 +369,9 @@ nav h2 {
 	#logo-responsive {
 		display: block;
 	}
+	#logo-responsive img {
+		height: 100%;
+	}
 
 	/* GALERIA */
 	
