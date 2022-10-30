@@ -15,18 +15,34 @@
   
   <nav>
     <a href="#" id="logo-responsive"><img src="./img/Food_blanco-removebg-preview.png" height="58px" alt=""></a>
-    <a href="../index.html"><h2 id="logo"> FoodTruck</h2></a>
+    <a href="#"><h2 id="logo"> FoodTruck</h2></a>
     <div>
-        <ul>
-          <a href="#"><h4>Inicio</h4></a>
-          <li><span>Menú</span>
+      <ul class="nav-normal">
+        <a href="#"><h4>Inicio</h4></a>
+        <li><span>Menú</span>
           <ul class="desp">
             <li><a href="./views/menu-caliente.html">Menú caliente</a></li>
             <li><a href="./views/menu-frio.html">Menú frio</a></li>
             <li><a href="./views/menu-bebida.html">Menú Bebidas</a></li>
           </ul>
-          </li>
-        </ul>
+        </li>
+      </ul>
+
+      <ul class="nav-resp">
+        <li><a href="#test"><i class="fa-solid fa-bars"></i></a>
+
+          <div class="desp-prin-div" id="test">
+            <ul class="desp-prin">
+              <li class="cerrar-desp"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="./views/menu-caliente.html">Menú caliente</a></li>
+              <li><a href="./views/menu-frio.html">Menú frio</a></li>
+              <li><a href="./views/menu-bebida.html">Menú Bebidas</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
     </div>
   </nav>
 
@@ -42,11 +58,18 @@
     </div>
 
     <section class="menus">
-      
-      <h2>Menus</h2>
-      <article>
-        <p>Damos la bienvenida a cualquier amante de la comida callejera. Hemos visto una gran variedad de food trucks y hemos seleccionado los mejores.</p>
-        <p>La mayorias ofrecian un contenido similar por ello hemos clasificado los alimentos en tres secciones: Frio, caliente y bebidas.</p>
+      <h2><span>Concurso</span></h2>
+      <article class="presentacion">
+        <div>
+          <h3>Introducción</h3>
+          <div>
+            <p>Damos la bienvenida a cualquier amante de la comida callejera. Hemos visto una gran variedad de food trucks y hemos seleccionado los mejores.</p>
+            <p>Hemos clasificado los alimentos en tres secciones principales: alimentos fríos, calientes y bebidas.</p>
+            <p>La mayoria de los participantes que hemos visitado ofrecian comida mexicana y americana...</p>
+            <p>Hay que mencionar que uno de los favoritos no pudo asistir al evento debido a ...</p>
+          </div>
+        </div>
+        <div><img src="./img/slider/img_10.jpg" alt=""></div>
       </article>
 
       <article class="frio">
@@ -74,9 +97,9 @@
       <article class="bebidas">
         <h3>Bebidas</h3>
         <div>
-          <img src="./img/comida/bebida/refrescos.png" alt="">
-          <img src="./img/comida/bebida/batido.jpg" alt="">
-          <img src="./img/comida/bebida/vinos.png" alt="">
+          <img src="./img/comida/bebida/jugo_1.jpg" alt="">
+          <img src="./img/comida/bebida/batido_2.jpg" alt="">
+          <img src="./img/comida/bebida/cerveza_2.jpg" alt="">
         </div>
         <p>Aqui os mostramos las bebidas que mas piden los clientes en los food trucks.</p>
         <a href="./views/menu-bebida.html"><button class="botones-co test"><span>Ver más</span></button></a>
@@ -84,6 +107,14 @@
 
     </section>
   </div>
+
+  <footer>
+      <ul>
+        <li>Teléfono: +56 988715442</li>
+        <li>TM & 2022 Food Corporation. Todos los derechos reservados</li>
+        <li><i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-youtube"></i></i></li>
+      </ul>
+  </footer>
 
 </body>
 </html>
